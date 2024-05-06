@@ -4,6 +4,10 @@ os:
 branches:
   only:
     - master
-coveralls: true
-notification:
-  email: false
+before_script:
+  - chmod +x mvnw
+script:
+  - ./mvnw clean install
+  - ./mvnw test
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

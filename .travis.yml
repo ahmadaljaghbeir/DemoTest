@@ -3,7 +3,7 @@ os:
   - linux
 branches:
   only:
-    - main
+    - master
 coveralls: true
 notification:
   email: false

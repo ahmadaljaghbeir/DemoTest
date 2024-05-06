@@ -1,0 +1,9 @@
+language: java
+os:
+  - linux
+branches:
+  only:
+    - main
+coveralls: true
+notification:
+  email: false
